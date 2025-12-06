@@ -3,7 +3,8 @@ import { Link } from 'react-router';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
-const BACKEND = "http://localhost:5000";
+// const BACKEND = "http://localhost:5000";
+const BACKEND = "https://diu-transport-system-server.vercel.app";
 
 const fetchBuses = async () => {
   const res = await axios.get(`${BACKEND}/api/admin/buses`);
